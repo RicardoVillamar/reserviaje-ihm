@@ -1,0 +1,2 @@
+import './polyfills.server.mjs';
+import{Ga as o,Ha as i,Ka as a,La as r,R as n}from"./chunk-BRBQGRSO.mjs";import"./chunk-5XUXGTUW.mjs";var m=(()=>{class e{static \u0275fac=function(t){return new(t||e)};static \u0275cmp=n({type:e,selectors:[["app-configuracion"]],standalone:!0,features:[r],decls:2,vars:0,template:function(t,f){t&1&&(o(0,"p"),a(1,"configuracion works!"),i())}})}return e})();export{m as default};

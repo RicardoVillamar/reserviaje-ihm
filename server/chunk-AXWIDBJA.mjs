@@ -1,0 +1,2 @@
+import './polyfills.server.mjs';
+import{a as r}from"./chunk-NIMORURT.mjs";import"./chunk-FUUMG24R.mjs";import{Ia as n,La as a,R as o}from"./chunk-BRBQGRSO.mjs";import"./chunk-5XUXGTUW.mjs";var d=(()=>{class e{static \u0275fac=function(t){return new(t||e)};static \u0275cmp=o({type:e,selectors:[["app-dashboard"]],standalone:!0,features:[a],decls:1,vars:0,template:function(t,i){t&1&&n(0,"app-search")},dependencies:[r]})}return e})();export{d as default};

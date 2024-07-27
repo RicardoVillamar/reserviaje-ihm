@@ -1,0 +1,15 @@
+{
+  "routes": [
+    "/",
+    "/asiento",
+    "/configuracion",
+    "/dashboard",
+    "/detalles",
+    "/notfound",
+    "/pagar",
+    "/pasajero",
+    "/perfil",
+    "/register",
+    "/viajesall"
+  ]
+}
