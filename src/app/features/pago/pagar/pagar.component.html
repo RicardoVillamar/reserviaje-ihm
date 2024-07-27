@@ -1,0 +1,270 @@
+<div class="px-4 md:px-6 2xl:px-20 2xl:container 2xl:mx-auto">
+  <div class="flex justify-start items-start space-y-2 flex-col">
+    <div
+      class="mt-0 flex flex-col xl:flex-row justify-center items-stretch w-full xl:space-x-8 space-y-4 md:space-y-6 xl:space-y-0"
+    >
+      <div
+        class="flex flex-col w-full xl:w-2/3 space-y-4 md:space-y-6 xl:space-y-0"
+      >
+        <h3
+          class="text-xl dark:text-black font-semibold leading-5 w-full text-gray-800 py-4 border-b-2 border-gray-200"
+        >
+          Pago
+        </h3>
+
+        <br />
+        <div class="flex flex-col px-4 w-full space-y-6">
+          <!-- Metodo pago -->
+          <form
+            class="flex flex-col w-full bg-white rounded-lg overflow-hidden border-2"
+          >
+            <div class="flex flex-col p-8">
+              <label class="text-black text-xl font-bold pb-8 flex items-center"
+                >Métodos de pago
+                <img
+                  src="https://leadershipmemphis.org/wp-content/uploads/2020/08/780370.png"
+                  class="h-8 ml-3"
+              /></label>
+              <section class="flex flex-col w-full">
+                <div class="flex flex-col w-full px-6">
+                  <label class="text-sm mt-2 ml-1">Nombre de tarjeta</label>
+                  <input
+                    type="text"
+                    class="border-2 border-gray-200 rounded-lg p-2 w-full px-3"
+                    placeholder="Nombre"
+                  />
+                </div>
+
+                <div class="flex flex-col w-full px-6 py-2">
+                  <label class="text-sm mt-2 ml-1">Numero de tarjeta</label>
+                  <input
+                    type="text"
+                    class="border-2 border-gray-200 rounded-lg p-2 w-full px-3"
+                    placeholder="0000-0000-0000-0000"
+                  />
+                </div>
+              </section>
+
+              <section class="flex mt-4 px-4 w-full flex-col">
+                <div class="mb-3 flex items-end">
+                  <div class="px-2 w-1/2">
+                    <label class="text-sm mb-2 ml-1"
+                      >Fecha de vencimiento</label
+                    >
+
+                    <select
+                      class="form-select w-full px-3 py-2 mb-1 border-2 border-gray-200 rounded-md focus:outline-none focus:border-indigo-500 transition-colors cursor-pointer"
+                    >
+                      <option value="01">01 - Enero</option>
+                      <option value="02">02 - Febrero</option>
+                      <option value="03">03 - Marzo</option>
+                      <option value="04">04 - Abril</option>
+                      <option value="05">05 - Mayo</option>
+                      <option value="06">06 - Junio</option>
+                      <option value="07">07 - Julio</option>
+                      <option value="08">08 - Agosto</option>
+                      <option value="09">09 - Septiember</option>
+                      <option value="10">10 - Octuber</option>
+                      <option value="11">11 - Noviember</option>
+                      <option value="12">12 - Diciember</option>
+                    </select>
+                  </div>
+                  <div class="px-2 w-1/2">
+                    <select
+                      class="form-select w-full px-3 py-2 mb-1 border-2 border-gray-200 rounded-md focus:outline-none focus:border-indigo-500 transition-colors cursor-pointer"
+                    >
+                      <option value="2025">2025</option>
+                      <option value="2026">2026</option>
+                      <option value="2027">2027</option>
+                      <option value="2028">2028</option>
+                      <option value="2029">2029</option>
+                    </select>
+                  </div>
+                  <div class="px-2 w-full">
+                    <label class="text-sm mb-2 ml-1">Codigo seguridad</label>
+                    <input
+                      type="text"
+                      class="w-full px-3 py-2 mb-1 border-2 border-gray-200 rounded-md"
+                      placeholder="XXX"
+                    />
+                  </div>
+                </div>
+              </section>
+            </div>
+          </form>
+          <!--  -->
+          <!-- Informacion factura -->
+          <form
+            class="flex flex-col w-full bg-white rounded-lg overflow-hidden border-2"
+          >
+            <div class="px-6">
+              <div class="flex flex-col p-8">
+                <h2
+                  class="text-black text-xl font-bold pb-6 flex items-center -mx-6"
+                >
+                  Informacion de facturacion
+                </h2>
+                <div class="grid grid-cols-2 gap-4 mb-4">
+                  <div>
+                    <label for="telefono" class="block mb-1">Teléfono</label>
+                    <input
+                      id="telefono"
+                      type="tel"
+                      class="w-full px-3 py-2 border rounded-lg"
+                      placeholder="Teléfono"
+                    />
+                  </div>
+                  <div>
+                    <label for="sexo" class="block mb-1">Sexo</label>
+                    <select
+                      id="sexo"
+                      class="w-full px-3 py-2 border rounded-lg"
+                    >
+                      <option>Selecciona sexo</option>
+                    </select>
+                  </div>
+                  <div>
+                    <label for="codigo-postal" class="block mb-1"
+                      >Código postal</label
+                    >
+                    <input
+                      id="codigo-postal"
+                      type="text"
+                      class="w-full px-3 py-2 border rounded-lg"
+                      placeholder="Código postal"
+                    />
+                  </div>
+                  <div>
+                    <label for="ciudad" class="block mb-1">Ciudad</label>
+                    <select
+                      id="ciudad"
+                      class="w-full px-3 py-2 border rounded-lg"
+                    >
+                      <option>Selecciona una ciudad</option>
+                    </select>
+                  </div>
+                  <div class="col-span-2">
+                    <label for="direccion" class="block mb-1">Dirección</label>
+                    <input
+                      id="direccion"
+                      type="text"
+                      class="w-full px-3 py-2 border rounded-lg"
+                      placeholder="Dirección"
+                    />
+                  </div>
+                  <div class="col-span-2">
+                    <label for="correo" class="block mb-1"
+                      >Correo electrónico</label
+                    >
+                    <input
+                      id="correo"
+                      type="email"
+                      class="w-full px-3 py-2 border rounded-lg"
+                      placeholder="Correo electrónico"
+                    />
+                  </div>
+                </div>
+                <div class="mb-4">
+                  <label class="inline-flex items-center">
+                    <input type="checkbox" class="form-checkbox" />
+                    <span class="ml-2"
+                      >Guardar la información de facturación y el método de pago
+                      para futuras reservas</span
+                    >
+                  </label>
+                </div>
+
+                <div class="w-full flex justify-center items-center py-4">
+                  <button
+                    routerLink="/"
+                    class="py-4 px-4 bg-gray-700 text-gray-100 font-semibold hover:bg-gray-600 w-full rounded-lg"
+                  >
+                    Pagar
+                  </button>
+                </div>
+              </div>
+            </div>
+          </form>
+          <!--  -->
+        </div>
+      </div>
+      <!-- Visor Precio -->
+      <section
+        class="flex flex-col px-4 py-6 md:p-6 xl:p-8 w-full xl:w-1/3 space-y-6"
+      >
+        <h3
+          class="text-xl dark:text-black font-semibold leading-5 text-gray-800 border-b-2 border-gray-200 pb-4"
+        >
+          Detalles del precio
+        </h3>
+        <div
+          class="flex justify-center items-center w-full space-y-4 flex-col border-gray-200 border-b pb-4"
+        >
+          <div class="flex justify-between items-center w-full">
+            <p class="text-base dark:text-black leading-4 text-gray-800">
+              Pasajero
+              <span
+                class="bg-gray-200 p-1 text-xs font-medium dark:bg-gray-600 dark:text-white leading-3 text-gray-800"
+              >
+                X2
+              </span>
+            </p>
+            <p class="text-base dark:text-black leading-4 text-gray-600">
+              $28.00
+            </p>
+          </div>
+          <div class="flex justify-between items-center w-full">
+            <p class="text-base dark:text-black leading-4 text-gray-800">
+              Tarifa adicional
+            </p>
+            <p class="text-base dark:text-black leading-4 text-gray-600">
+              $8.00
+            </p>
+          </div>
+          <div class="flex justify-between w-full">
+            <p class="text-base dark:text-black leading-4 text-gray-800">
+              Subtotal
+            </p>
+            <p class="text-base dark:text-black leading-4 text-gray-600">
+              $56.00
+            </p>
+          </div>
+          <i class="flex justify-between items-center w-full">
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              fill="none"
+              viewBox="0 0 24 24"
+              stroke-width="1.5"
+              stroke="currentColor"
+              class="size-20 px-2 dark:text-gray-500"
+            >
+              <path
+                stroke-linecap="round"
+                stroke-linejoin="round"
+                d="M12 9v3.75m9-.75a9 9 0 1 1-18 0 9 9 0 0 1 18 0Zm-9 3.75h.008v.008H12v-.008Z"
+              />
+            </svg>
+            <p class="md:text-xs dark:text-gray-600 leading-4 text-gray-600">
+              Las tarifas adicionales, es el pago por beneficios adicionales
+              dentro del vehiculo como por ejemplo, aire acondicionado,
+              internet, comida, etc.
+            </p>
+          </i>
+        </div>
+        <div class="flex justify-between items-center w-full">
+          <p
+            class="text-base dark:text-black font-semibold leading-4 text-gray-800"
+          >
+            Precio total
+          </p>
+          <p
+            class="text-base dark:text-black font-semibold leading-4 text-gray-600"
+          >
+            $36.00
+          </p>
+        </div>
+      </section>
+      <!--  -->
+    </div>
+  </div>
+</div>
