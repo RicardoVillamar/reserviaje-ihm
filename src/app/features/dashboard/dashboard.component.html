@@ -1,1 +1,154 @@
-<app-search></app-search>
+<section class="bg-gray-100" id="hero">
+  <div class="container mx-auto flex flex-col items-center py-12 sm:py-24">
+    <div
+      class="w-11/12 sm:w-2/3 lg:flex justify-center items-center flex-col mb-5 sm:mb-10"
+    >
+      <h1
+        class="text-2xl sm:text-3xl md:text-4xl lg:text-5xl xl:text-6xl text-center text-gray-800 font-black leading-7 md:leading-10"
+      >
+        Ten la Libertad de Poder
+        <span class="text-blue-600">Reservar</span>
+        Tú Viaje
+      </h1>
+      <p
+        class="mt-5 sm:mt-10 lg:w-10/12 text-gray-600 font-normal text-center text-sm sm:text-lg"
+      >
+        Tu próxima aventura a Un clic de distancia: Descubre, Reserva y Emprende
+        el viaje de tus sueños con nuestra plataforma rápida y segura
+      </p>
+    </div>
+    <div class="flex justify-center items-center">
+      <button
+        class="focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-gray-700 bg-gray-700 transition duration-150 ease-in-out hover:bg-gray-600 lg:text-xl lg:font-bold rounded text-white px-4 sm:px-10 border border-gray-700 py-2 sm:py-4 text-sm"
+        (click)="scrollToSection('search')"
+      >
+        Comenzar la busqueda
+      </button>
+    </div>
+  </div>
+</section>
+<section
+  id="search"
+  class="container mx-auto flex flex-col items-center py-8 sm:py-16"
+>
+  <app-search [isVisibleOption]="false"></app-search>
+</section>
+
+<section id="popular-destinations" class="py-8 bg-gray-100">
+  <div class="container mx-auto">
+    <h2 class="text-2xl font-bold mb-8">Destinos Populares</h2>
+    <div class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-8">
+      <div class="destination bg-gray-800 rounded-lg shadow-md overflow-hidden">
+        <div class="p-6">
+          <h3 class="text-xl font-semibold text-white text-center">
+            Guayaquil
+          </h3>
+        </div>
+        <img
+          src="https://cdn.discordapp.com/attachments/1266987869243703346/1266992551152324710/50.png?ex=66a72a43&is=66a5d8c3&hm=f035da1b2b199d0017d688a757d83ed1f76e339df4ff3263497723d4c9443b32&"
+          alt="Guayaquil"
+          class="w-full h-48 object-cover"
+        />
+      </div>
+      <div class="destination bg-gray-800 rounded-lg shadow-md overflow-hidden">
+        <div class="p-6">
+          <h3 class="text-xl font-semibold text-white text-center">Quito</h3>
+        </div>
+        <img
+          src="https://cdn.discordapp.com/attachments/1266987869243703346/1266989918689824810/quito-820x410.png?ex=66a727d0&is=66a5d650&hm=84edb931ad0b982636365f8fec580330321b8c71f156ace22ea5d6b62cf6d98b&"
+          alt="Quito"
+          class="w-full h-48 object-cover"
+        />
+      </div>
+      <div class="destination bg-gray-800 rounded-lg shadow-md overflow-hidden">
+        <div class="p-6">
+          <h3 class="text-xl font-semibold text-white text-center">Cuenca</h3>
+        </div>
+        <img
+          src="https://cdn.discordapp.com/attachments/1266987869243703346/1266989600371380246/Catedral-Cuenca-Ecuador-1050x500-1-900x506.png?ex=66a72784&is=66a5d604&hm=e94a3816586e617e91dc0ef12378083a162cc2e17f8ee1e5b619681ece536f0f&"
+          alt="Cuenca"
+          class="w-full h-48 object-cover"
+        />
+      </div>
+    </div>
+  </div>
+</section>
+
+<section id="testimonials" class="py-16 bg-white">
+  <div class="container mx-auto">
+    <h2 class="text-2xl font-bold mb-8 px-4">Lo que dicen nuestros clientes</h2>
+    <div class="grid grid-cols-1 gap-8">
+      <div
+        class="testimonial bg-gray-100 rounded-lg p-6 shadow-md w-full flex flex-col sm:flex-row items-center"
+      >
+        <img
+          src="https://cdn.discordapp.com/attachments/1266987826902335559/1266991219209146460/image.png?ex=66a72906&is=66a5d786&hm=f64511a60acc2edc8862ebbae78506708a5a6f3fbeb3a4cc6b4c5b618e046bc3&"
+          alt="María Pérez"
+          class="w-16 h-16 rounded-full mb-4 sm:mb-0 sm:mr-4"
+        />
+        <div class="text-left flex-grow">
+          <cite class="block font-semibold">María Pérez</cite>
+          <p class="text-lg italic mb-2">
+            "¡Excelente servicio! Reservé mi viaje en minutos y todo fue
+            perfecto. El proceso fue muy sencillo y el soporte al cliente fue
+            excepcional. Definitivamente volveré a utilizar esta plataforma para
+            mis futuros viajes."
+          </p>
+        </div>
+        <div
+          class="text-sm text-gray-500 mt-4 sm:mt-0 sm:ml-4 text-end sm:text-left"
+        >
+          Publicado el: 10 de julio de 2024
+        </div>
+      </div>
+      <div
+        class="testimonial bg-gray-100 rounded-lg p-6 shadow-md w-full flex flex-col sm:flex-row items-center"
+      >
+        <img
+          src="https://cdn.discordapp.com/attachments/1266987826902335559/1266991229388984320/image.png?ex=66a72908&is=66a5d788&hm=390d18d8f5707711447ee39de8a02e6a366f46036a497feb0419e4d02b350472&"
+          alt="Juan Rodríguez"
+          class="w-16 h-16 rounded-full mb-4 sm:mb-0 sm:mr-4"
+        />
+        <div class="text-left flex-grow">
+          <cite class="block font-semibold">Juan Rodríguez</cite>
+          <p class="text-lg italic mb-2">
+            "La mejor plataforma para reservar viajes, muy fácil de usar y
+            confiable. No tuve ningún problema durante el proceso de reserva y
+            la confirmación fue rápida. Recomendaría esta plataforma a
+            cualquiera que esté planeando un viaje."
+          </p>
+        </div>
+        <div
+          class="text-sm text-gray-500 mt-4 sm:mt-0 sm:ml-4 text-end sm:text-left"
+        >
+          Publicado el: 15 de julio de 2024
+        </div>
+      </div>
+      <div
+        class="testimonial bg-gray-100 rounded-lg p-6 shadow-md w-full flex flex-col sm:flex-row items-center"
+      >
+        <img
+          src="https://cdn.discordapp.com/attachments/1266987826902335559/1266991273785425920/image.png?ex=66a72913&is=66a5d793&hm=fa4a643637de3fce77e01e63b5e530d5f582a002e150d75a678ace89c45fff3a&"
+          alt="Ana Gómez"
+          class="w-16 h-16 rounded-full mb-4 sm:mb-0 sm:mr-4"
+        />
+        <div class="text-left flex-grow">
+          <cite class="block font-semibold">Ana Gómez</cite>
+          <p class="text-lg italic mb-2">
+            "Sin duda, la mejor experiencia de viaje que he tenido gracias a
+            esta plataforma. La interfaz es muy intuitiva y el soporte fue muy
+            útil. Todo el proceso fue fluido y sin complicaciones. Estoy muy
+            satisfecha con mi experiencia."
+          </p>
+        </div>
+        <div
+          class="text-sm text-gray-500 mt-4 sm:mt-0 sm:ml-4 text-end sm:text-left"
+        >
+          Publicado el: 20 de julio de 2024
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<app-loadingmodal [isVisible]="isLoading"></app-loadingmodal>

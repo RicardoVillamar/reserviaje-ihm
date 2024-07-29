@@ -7,4 +7,4 @@ import { Component } from '@angular/core';
   templateUrl: './configuracion.component.html',
   styleUrl: './configuracion.component.css',
 })
-export default class ConfiguracionComponent {}
+export class ConfiguracionComponent {}

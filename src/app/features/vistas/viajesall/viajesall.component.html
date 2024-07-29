@@ -1,5 +1,6 @@
 <!-- component -->
-<app-search></app-search>
+
+<app-search [isVisibleO]="false"></app-search>
 <div class="px-4 md:px-6 2xl:px-20 2xl:container 2xl:mx-auto">
   <div class="flex justify-start item-start space-y-2 flex-col"></div>
   <div
@@ -186,7 +187,7 @@
               <h2 class="text-2xl font-bold text-black mb-4">USD$360</h2>
               <div class="flex flex-col rounded-lg overflow-hidden sm:flex-col">
                 <button
-                  routerLink="/detalles"
+                  (click)="navigateToView()"
                   class="py-3 px-4 bg-gray-700 text-gray-100 font-semibold uppercase hover:bg-gray-600"
                 >
                   Reservar
@@ -250,7 +251,7 @@
               <h2 class="text-2xl font-bold text-black mb-4">USD$360</h2>
               <div class="flex flex-col rounded-lg overflow-hidden sm:flex-col">
                 <button
-                  routerLink="/detalles"
+                  (click)="navigateToView()"
                   class="py-3 px-4 bg-gray-700 text-gray-100 font-semibold uppercase hover:bg-gray-600"
                 >
                   Reservar
@@ -313,7 +314,7 @@
               <h2 class="text-2xl font-bold text-black mb-4">USD$360</h2>
               <div class="flex flex-col rounded-lg overflow-hidden sm:flex-col">
                 <button
-                  routerLink="/detalles"
+                  (click)="navigateToView()"
                   class="py-3 px-4 bg-gray-700 text-gray-100 font-semibold uppercase hover:bg-gray-600"
                 >
                   Reservar
@@ -376,7 +377,7 @@
               <h2 class="text-2xl font-bold text-black mb-4">USD$360</h2>
               <div class="flex flex-col rounded-lg overflow-hidden sm:flex-col">
                 <button
-                  routerLink="/detalles"
+                  (click)="navigateToView()"
                   class="py-3 px-4 bg-gray-700 text-gray-100 font-semibold uppercase hover:bg-gray-600"
                 >
                   Reservar
@@ -439,7 +440,7 @@
               <h2 class="text-2xl font-bold text-black mb-4">USD$360</h2>
               <div class="flex flex-col rounded-lg overflow-hidden sm:flex-col">
                 <button
-                  routerLink="/detalles"
+                  (click)="navigateToView()"
                   class="py-3 px-4 bg-gray-700 text-gray-100 font-semibold uppercase hover:bg-gray-600"
                 >
                   Reservar
@@ -452,3 +453,5 @@
     </div>
   </div>
 </div>
+
+<app-loadingmodal [isVisible]="isLoading"></app-loadingmodal>

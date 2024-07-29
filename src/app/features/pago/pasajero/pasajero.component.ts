@@ -8,4 +8,4 @@ import { RouterLink } from '@angular/router';
   templateUrl: './pasajero.component.html',
   styleUrl: './pasajero.component.css',
 })
-export default class PasajeroComponent {}
+export class PasajeroComponent {}

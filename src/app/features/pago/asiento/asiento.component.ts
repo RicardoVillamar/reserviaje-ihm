@@ -8,4 +8,4 @@ import { RouterLink } from '@angular/router';
   templateUrl: './asiento.component.html',
   styleUrl: './asiento.component.css',
 })
-export default class AsientoComponent {}
+export class AsientoComponent {}
